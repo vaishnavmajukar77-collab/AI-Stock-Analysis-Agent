@@ -116,20 +116,3 @@ def get_company_news(company_name: str) -> dict:
 
 
 
-from google.adk.tools import google_search
-news_agent = Agent(
-
-    name="NewsAgent",
-
-    model="gemini-2.5-flash",
-
-    description="Retrieves verified company news published during the last 14 days.",
-
-    instruction=""" You are NewsAgent. 
-    Use the google_search tool to find the latest news about the given company from the last 14 days.
-    Present the information clearly without URLs
-""",
-
-    tools=[google_search]
-
-)
