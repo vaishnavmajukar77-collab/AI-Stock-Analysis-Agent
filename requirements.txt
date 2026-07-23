@@ -1,0 +1,5 @@
+google-adk
+yfinance
+python-dotenv
+pandas
+feedparser
